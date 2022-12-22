@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Company Profile Project</title>
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+      <!-- MDB -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="style_big_layer.css" media="screen and (min-width: 1200px)" />
+      <link rel="stylesheet" href="style_medium_layer.css"
+            media="screen and (max-width: 1200px) and (min-width: 992px)" />
+      <link rel="stylesheet" href="style_small_layer.css" media="screen and (max-width: 992px)" />
+      <link rel="stylesheet" href="preloader.css">
+</head>
+
+<body id="body">
+
+      <div class="row" id="preloader">
+            <div class="col-md-12">
+                  <div class="loader15">
+                        <span></span><span></span><span></span><span></span>
+                  </div>
+            </div>
+      </div>
+      <script>
+            var loader = document.getElementById("preloader");
+            var body = document.getElementById("body");
+            var dismissLoadingScreen = function () {
+                  loader.style.display = "none";
+                  body.style.overflow = "auto";
+            };
+            var wait3seconds = function () {
+                  var result = setTimeout(dismissLoadingScreen, 1000);
+            };
+            window.addEventListener("load", wait3seconds);
+      </script>
+      <header>
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                  <div class="container">
+                        <a href="#section_satu">
+                              <img src="logo.png" alt="">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li>
+                                          <a id="slash-text-1" onmouseover="displayblock1(this)"
+                                                onmouseout="normalblock1(this)" class="nav-up" aria-current="page"
+                                                href="#section_satu">Home</a>
+                                          <div id="slash1" class="slash slash-sm"></div>
+                                    </li>
+                                    <li>
+                                          <a id="slash-text-2" onmouseover="displayblock2(this)"
+                                                onmouseout="normalblock2(this)" class="nav-up"
+                                                href="#section_dua">Service</a>
+                                          <div id="slash2" class="slash"></div>
+                                    </li>
+                                    <li>
+                                          <a id="slash-text-3" onmouseover="displayblock3(this)"
+                                                onmouseout="normalblock3(this)" class="nav-up"
+                                                href="#section_tiga">Company
+                                                Values</a>
+                                          <div id="slash3" class="slash slash-xx"></div>
+                                    </li>
+                                    <li>
+                                          <a id="slash-text-4" onmouseover="displayblock4(this)"
+                                                onmouseout="normalblock4(this)" class="nav-up"
+                                                href="#section_empat">About Us</a>
+                                          <div id="slash4" class="slash slash-md"></div>
+                                    </li>
+                              </ul>
+                              <div class="d-flex">
+                                    <ul class="navbar-nav">
+                                          <li class="nav-up">
+                                                <a class="nav-up call-up" aria-current="page" href="#">
+                                                      <i class="flag flag-indonesia"></i> Call Us - <span
+                                                            class="nav-up-active"> (021) 2948 8557 </span>
+                                                </a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                                      ID
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                      <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="nav-up">
+                                                <a href="#section_lima">
+                                                      <button type="button" class="btn btn-outline-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                  height="16" fill="currentColor"
+                                                                  class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                  <path fill-rule="evenodd"
+                                                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                            Contact Us</button>
+                                                </a>
+
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+      <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                        navbar.classList.add("sticky");
+                  } else {
+                        navbar.classList.remove("sticky");
+                  }
+            }
+      </script>
+
+      <script>
+
+            function displayblock1(x) {
+                  document.getElementById('slash-text-1').style.color = "rgb(88, 88, 252)";
+                  document.getElementById('slash1').style.opacity = "0.7";
+            }
+
+            function normalblock1(x) {
+                  document.getElementById('slash-text-1').style.color = "rgb(102, 102, 102)";
+                  document.getElementById('slash1').style.opacity = "0";
+            }
+            function displayblock2(x) {
+                  document.getElementById('slash-text-2').style.color = "rgb(88, 88, 252)";
+                  document.getElementById('slash2').style.opacity = "0.7";
+            }
+
+            function normalblock2(x) {
+                  document.getElementById('slash-text-2').style.color = "rgb(102, 102, 102)";
+                  document.getElementById('slash2').style.opacity = "0";
+            }
+            function displayblock3(x) {
+                  document.getElementById('slash-text-3').style.color = "rgb(88, 88, 252)";
+                  document.getElementById('slash3').style.opacity = "0.7";
+            }
+
+            function normalblock3(x) {
+                  document.getElementById('slash-text-3').style.color = "rgb(102, 102, 102)";
+                  document.getElementById('slash3').style.opacity = "0";
+            }
+            function displayblock4(x) {
+                  document.getElementById('slash-text-4').style.color = "rgb(88, 88, 252)";
+                  document.getElementById('slash4').style.opacity = "0.7";
+            }
+
+            function normalblock4(x) {
+                  document.getElementById('slash-text-4').style.color = "rgb(102, 102, 102)";
+                  document.getElementById('slash4').style.opacity = "0";
+            }
+            function displayblock5(x) {
+                  document.getElementById('slash-text-5').style.color = "rgb(88, 88, 252)";
+                  document.getElementById('slash5').style.opacity = "0.7";
+            }
+
+            function normalblock5(x) {
+                  document.getElementById('slash-text-5').style.color = "rgb(102, 102, 102)";
+                  document.getElementById('slash5').style.opacity = "0";
+            }
+      </script>
+
+      <section onmouseover="displayblock1(this)" onmouseout="normalblock1(this)" id="section_satu"
+            style="background-color: transparent; padding-top: 80px;margin-top: -80px;">
+            <div class="container">
+                  <div class="content_1">
+                        <div class="row verse">
+                              <div class="col-lg-6">
+                                    <div class="header-hero slide-right">
+                                          To build businesses that give impact to the society
+                                    </div>
+                                    <div class="desc-hero slide-right">
+                                          <span class="strong">Alcor Prime</span>, event and activation enabler company
+                                          that activation programs to generate more impact to your brand with combine
+                                          mind-blowing concept and you’ll have yourself
+                                          the key to successful event.
+                                    </div>
+                                    <div class="hero-action slide-right">
+                                          <div class="flex">
+                                                <a href="#section_dua">
+                                                      <button class="btn btn-primary">Our Service</button>
+                                                </a>
+                                                <a class="detail-us" href="#section_empat">more detail about us</a>
+                                          </div>
+
+                                    </div>
+                              </div>
+                              <div class="col-lg-1"></div>
+                              <div class="col-lg-5">
+                                    <div class="fancy-border-radius slide-left"></div>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="content_2">
+                        <div class="row">
+                              <div class="col-lg-3 col-md-12 col-sm-12">
+                                    <div class="row">
+                                          <div class="play-image col-lg-6 col-md-12 col-sm-12 ">
+                                                <img class="slide-up" src="play.png" alt="">
+                                          </div>
+                                          <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <p class="play slide-up"> let's see our profile</p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-lg-5 col-md-12 col-sm-12">
+                                    <iframe class="video slide-up" src="https://www.youtube.com/embed/EMjjHuYG9v0"
+                                          title="YouTube video player" frameborder="0"
+                                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen></iframe>
+                              </div>
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="image-3-border-radius slide-up"></div>
+
+                              </div>
+                        </div>
+                  </div>
+
+
+
+            </div>
+
+      </section>
+
+      <section name="section_dua" onmouseover="displayblock2(this)" onmouseout="normalblock2(this)" id="section_dua">
+            <div class="container">
+                  <div class="row">
+                        <div class="flex col-lg-7">
+                              <div class="mini-title">
+                                    We Can Support You
+                              </div>
+                              <div class="title_dua">
+                                    Alcor Prime Service
+                              </div>
+                              <div class="line_1"></div>
+                        </div>
+                        <div class="col-lg-5"><img class="play-2" src="play_2.png" alt=""></div>
+                  </div>
+                  <div class="list-dua">
+                        <div class="row">
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card-service">
+                                          <div class="row">
+                                                <div class="col-3">
+                                                      <div class="service-image">
+                                                            <img src="Logo-Value-06.png" alt="">
+                                                      </div>
+                                                </div>
+                                                <div class="col-9">
+                                                      <div class="card-title data-aos-duration=" 500"">
+                                                            Brand Activation
+                                                      </div>
+                                                      <div class="card-desc card-padding-less">
+                                                            Our services go beyond organizing events. We’re here to help
+                                                            you create a
+                                                            brand activation strategy tailored specifically to your
+                                                            needs; offering you
+                                                            various solutions to increase awareness and engagement with
+                                                            your brand.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card-service">
+                                          <div class="row">
+                                                <div class="col-3">
+                                                      <div class="service-image">
+                                                            <img src="Logo-Value-07.png" alt="">
+                                                      </div>
+                                                </div>
+                                                <div class="col-9">
+                                                      <div class="card-title">
+                                                            Event Organizer
+                                                      </div>
+                                                      <div class="card-desc card-padding-less">
+                                                            Collaboration is the key to innovation. Our team of bright,
+                                                            talented and
+                                                            passionate creatives are here to work together with you to
+                                                            create
+                                                            spectacular event concepts that will surely be ones to
+                                                            remember.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                        <div class="row">
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card-service">
+                                          <div class="row">
+                                                <div class="col-3">
+                                                      <div class="service-image">
+                                                            <img src="Logo-Value-08.png" alt="">
+                                                      </div>
+                                                </div>
+                                                <div class="col-9">
+                                                      <div class="card-title">
+                                                            Production
+                                                      </div>
+                                                      <div class="card-desc card-padding-less">
+                                                            Excellence is our standard, and we are proud to have
+                                                            partners who are
+                                                            equally committed to achieving this standard. Providing you
+                                                            with the best
+                                                            lighting, sound, stage design, cameramen, live crew, event
+                                                            apps as well as
+                                                            other event production needs.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card-service">
+                                          <div class="row">
+                                                <div class="col-3">
+                                                      <div class="service-image">
+                                                            <img src="Logo-Value-09.png" alt="">
+                                                      </div>
+                                                </div>
+                                                <div class="col-9">
+                                                      <div class="card-title title-less">
+                                                            Venue
+                                                      </div>
+                                                      <div class="card-desc card-padding-less">
+                                                            We manage two of the finest venues for corporate events,
+                                                            concerts,
+                                                            conferences, as well as exhibitions.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card-service">
+                                          <div class="row">
+                                                <div class="col-3">
+                                                      <div class="service-image">
+                                                            <img src="Logo-Value-10.png" alt="">
+                                                      </div>
+                                                </div>
+                                                <div class="col-9">
+                                                      <div class="card-title title-less">
+                                                            Hybrid Event
+                                                      </div>
+                                                      <div class="card-desc card-padding-less">
+                                                            Hybrid events have become part of the new culture. We’ve
+                                                            helped
+                                                            facilitate these events for a global audience, and we’re
+                                                            here to help you.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card-service">
+                                          <div class="row">
+                                                <div class="col-3">
+                                                      <div class="service-image">
+                                                            <img src="Logo-Value-11.png" alt="">
+                                                      </div>
+                                                </div>
+                                                <div class="col-9">
+                                                      <div class="card-title title-less">
+                                                            Crew
+                                                      </div>
+                                                      <div class="card-desc card-padding-less">
+                                                            Need a crew of hard-working professionals with a high
+                                                            standard of
+                                                            execution? We can make it happen.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                  </div>
+
+
+            </div>
+      </section>
+
+
+      <section name="section_tiga" onmouseover="displayblock3(this)" onmouseout="normalblock3(this)" id="section_tiga"
+            style="padding-top: 100px;">
+            <div class="container">
+                  <div class="row">
+                        <div class="flex col-lg-7">
+                              <div class="second-mini-title">
+                                    Our Corporate Culture
+                              </div>
+                              <div class="title_dua">
+                                    Alcor Prime Company Values
+                              </div>
+                              <div class="second_line_1"></div>
+                        </div>
+                        <div class="col-lg-5"></div>
+                  </div>
+                  <div class="list-dua">
+                        <div class="row">
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="card-value">
+                                          <div class="card-image">
+                                                <img src="Logo-Value-01.png" alt="">
+                                          </div>
+                                          <div class="card-title card-title-center">
+                                                Godly Character
+                                          </div>
+                                          <div class="card-desc card-desc-center card-padding">
+                                                Loyalty, integrity, gratitude, humility, and truth.
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="card-value">
+                                          <div class="great-image">
+                                                <img class="great-image" src="great.jpg" alt="">
+                                          </div>
+                                          <h4 align="center">
+                                                <strong>G . R . E . A . T</strong>
+                                          </h4>
+                                    </div>
+
+                              </div>
+
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="card-value">
+                                          <div class="card-image">
+                                                <img src="Logo-Value-05.png" alt="">
+                                          </div>
+                                          <div class="card-title card-title-center">
+                                                Treasure Family & Relationship
+                                          </div>
+                                          <div class="card-desc card-desc-center card-padding">
+                                                Servant leadership, love one another, and humanity
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="card-value">
+                                          <div class="card-image">
+                                                <img src="Logo-Value-02.png" alt="">
+                                          </div>
+                                          <div class="card-title card-title-center">
+                                                Reliability & Honor
+                                          </div>
+                                          <div class="card-desc card-desc-center card-padding">
+                                                Take responsibility and keep promises, give respect to other.
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="card-value">
+                                          <div class="card-image">
+                                                <img src="Logo-Value-03.png" alt="">
+                                          </div>
+                                          <div class="card-title card-title-center">
+                                                Embrace & Drive Change
+                                          </div>
+                                          <div class="card-desc card-desc-center card-padding">
+                                                Be an agent of change, creative thinking, innovative, and passionate.
+                                          </div>
+                                    </div>
+                              </div>
+
+
+                              <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="card-value">
+                                          <div class="card-image">
+                                                <img src="Logo-Value-04.png" alt="">
+                                          </div>
+                                          <div class="card-title card-title-center">
+                                                Active Learning & Growth
+                                          </div>
+                                          <div class="card-desc card-desc-center card-padding">
+                                                Pursue knowledge, do more with less.
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <section class="section-four" name="section_empat" onmouseover="displayblock4(this)"
+            onmouseout="normalblock4(this)" id="section_empat">
+            <div class="layer-about"></div>
+            <div class="container">
+                  <div class="about-text">
+                        <div class="row">
+                              <div class="col-lg-8 col-sm-12">
+                                    <div class="about-title">
+                                          About Us
+                                    </div>
+                                    <div class="desc-about">
+                                          Going beyond our mission as a one stop solution in the event industry, we're
+                                          now expanding our business to
+                                          work on strategic
+                                          activation programs that generate more impact to your brand.
+
+                                          Standing out from thousands of brands can be difficult without a well-targeted
+                                          brand activation strategy.
+                                          You’ll need to know
+                                          your audience in order to surprise them, to create something interactive,
+                                          interesting - memorable. You’ll
+                                          find that collaborating
+                                          with strategic partners greatly adds value to your brand. Combine this with a
+                                          mind-blowing concept and
+                                          you’ll have yourself
+                                          the key to a successful event. Alcor MICE is here to make all of this possible
+                                          for you.
+                                    </div>
+
+                              </div>
+                              <div class="col-lg-4 col-sm-12">
+                                    <div class="image-about-section">
+                                          <img class="about-image" src="about-image.png" alt="">
+                                    </div>
+
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
+
+
+      </section>
+      <section class="section-lima" name="section_lima" onmouseover="displayblock5(this)"
+            onmouseout="normalblock5(this)" id="section_lima">
+            <div class="container">
+                  <div class="content-lima">
+                        <div class="title-lima">
+                              Contact Us
+                        </div>
+                        <div class="row">
+                              <div class="col-8 col-lg-4">
+                                    <div class="contact">
+                                          <div class="title-contact">
+                                                Holding Company
+                                          </div>
+                                          <hr>
+                                          <div class="desc-contact">
+                                                Alcor Prime Ι PT. Wahana Inspirasi Bintang<br>
+                                                Mal Kota Kasablanka, Lt. 3 & 4 U-301 & 401 <br>
+                                                Jl. Casablanca Raya Kav. 88 <br>
+                                                Jakarta Selatan 12870 <br>
+                                                Telp: (021) 2948 8557 <br>
+                                                Email: info@alcorprime.com <br>
+                                          </div>
+
+                                    </div>
+                              </div>
+                              <div class="col-4 col-lg-8">
+                                    <div class="media-sosial">
+                                          <a href="https://www.instagram.com/alcorprime/">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                      class="bix bi-instagram" viewBox="0 0 16 16">
+                                                      <path
+                                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                                </svg>
+                                          </a>
+                                          <a href="https://www.facebook.com/alcorprime/">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                      class="bix bi-facebook" viewBox="0 0 16 16">
+                                                      <path
+                                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                </svg>
+                                          </a>
+
+                                          <a href="https://www.youtube.com/channel/UCeq0hvBhKfMH8E2stk-Th9w/featured">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                      class="bix bi-youtube" viewBox="0 0 16 16">
+                                                      <path
+                                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                                </svg>
+                                          </a>
+                                    </div>
+                              </div>
+
+
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+
+      <section class="section-enam">
+            <div class="container">
+                  <div class="content-end-section">
+                        <div class="row">
+                              <div class="col-6">
+                                    <div class="maker">
+                                          Copyright <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                                                <path
+                                                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+                                          </svg> 2023 Alcor Prime
+                                    </div>
+                              </div>
+                              <div class="col-6">
+                                    <div class="maker-right">
+                                          Build with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                          </svg> by Afifudin
+                                    </div>
+                              </div>
+                        </div>
+
+
+
+                  </div>
+
+            </div>
+
+      </section>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
